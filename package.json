@@ -1,0 +1,24 @@
+{
+  "name": "indeed-web-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/script.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && sass \"src/style.scss\" \"sources/style.css\" && browserify build/script.js -o sources/script.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sethvg/indeed-ui.git"
+  },
+  "author": "sevangri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sethvg/indeed-ui/issues"
+  },
+  "homepage": "https://github.com/Sethvg/indeed-ui#readme",
+  "dependencies": {
+    "commonjs": "0.0.1",
+    "serve": "^10.0.2"
+  }
+}

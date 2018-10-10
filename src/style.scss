@@ -1,0 +1,13 @@
+$background : lightgrey;
+
+$small : 600px;
+$medium : 1200px;
+$large : 4000px;
+
+@import "./slider";
+@import "./windows";
+@import "./dots";
+
+body{
+  background-color: $background;
+}
