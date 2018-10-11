@@ -37,16 +37,13 @@ export class Dot {
         return color;
     }
 
-
     get y(): number {
         return this._y;
     }
 
-
     get x(): number {
         return this._x;
     }
-
 
     get radius(): number {
         return this._radius;
@@ -56,11 +53,9 @@ export class Dot {
         this._y = value;
     }
 
-
     get color(): string {
         return this._color;
     }
-
 
     get worth(): number {
         return this._worth;

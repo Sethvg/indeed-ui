@@ -65,7 +65,6 @@ export class Game {
             let dot = new Dot(radius, xPos);
             this.state.push(dot);
         }
-
     }
 
     public queueClick(event: MouseEvent) {
@@ -119,7 +118,7 @@ export class Game {
     private handleClicks() {
         this.clicksToHandle.forEach(clickPos => {
             this.handleClick(clickPos.x, clickPos.y);
-        })
+        });
 
         this.clicksToHandle = [];
     }
@@ -184,7 +183,6 @@ export class Game {
             setTimeout((count) => this.spawn(count), 1000, new Number(spliceCount));
             this.updateScore(splicedScore);
         }
-
     }
 
     private binaryTreeFind(y: number): number {
@@ -196,7 +194,6 @@ export class Game {
     }
 
     private binaryTreeFindRecurse(y: number, start: number, end: number, arr: Dot[], comparetor: (d: Dot, n: number) => number): number {
-
         if (end < start) {
             return -1;
         }
@@ -221,12 +218,9 @@ export class Game {
         } else {
             return this.binaryTreeFindRecurse(y, half + 1, end, arr, comparetor)
         }
-
     }
 
     private isWithinYMaxRadius(dot: Dot, y: number): number {
-
-
         let isWithin = Math.pow(dot.y - y, 2) < Math.pow(this.maxRadius, 2);
 
         if (isWithin) {
