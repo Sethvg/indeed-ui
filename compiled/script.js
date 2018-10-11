@@ -18,7 +18,7 @@ var Dot = (function () {
     function Dot(radius, x) {
         this._radius = radius;
         this._y = -this._radius;
-        this._x = x + this._radius;
+        this._x = x;
         this._worth = 11 + (-.1 * radius);
         this._color = this.getRandomColor();
     }
@@ -131,7 +131,7 @@ var Game = (function () {
         console.log("Spawning: " + count);
         for (var a = 0; a < count; a++) {
             var radius = MathUtil_1.MathUtil.GetRandomInRange(this.minRadius, this.maxRadius);
-            var xPos = MathUtil_1.MathUtil.GetRandomInRange(0, (this.width - radius * 2));
+            var xPos = MathUtil_1.MathUtil.GetRandomInRange(0, (this.width - radius));
             var dot = new dot_1.Dot(radius, xPos);
             this.state.push(dot);
         }

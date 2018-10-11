@@ -11,7 +11,7 @@ export class Dot{
     constructor(radius : number, x : number) {
         this._radius = radius;
         this._y = -this._radius;
-        this._x = x + this._radius;
+        this._x = x;
         this._worth = 11 + (-.1 * radius);
         this._color = this.getRandomColor();
     }
