@@ -1,14 +1,14 @@
 import {Game} from "./game";
 
-export class Dot{
-    private _radius : number;
-    private _x : number;
-    private _y : number;
-    private _worth : number;
-    private visual : Path2D;
-    private _color : string;
+export class Dot {
+    private _radius: number;
+    private _x: number;
+    private _y: number;
+    private _worth: number;
+    private visual: Path2D;
+    private _color: string;
 
-    constructor(radius : number, x : number) {
+    constructor(radius: number, x: number) {
         this._radius = radius;
         this._y = -this._radius;
         this._x = x;
@@ -20,9 +20,9 @@ export class Dot{
         this.y += fallSpeed;
     }
 
-    draw(ctx : CanvasRenderingContext2D){
+    draw(ctx: CanvasRenderingContext2D) {
         ctx.beginPath();
-        ctx.arc(this._x, this._y, this._radius, 0 , 2 * Math.PI);
+        ctx.arc(this._x, this._y, this._radius, 0, 2 * Math.PI);
         ctx.fillStyle = this._color;
         ctx.fill();
         ctx.stroke();

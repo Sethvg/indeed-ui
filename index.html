@@ -1,33 +1,33 @@
 <html>
-    <head>
-        <script> var exports = {}; </script>
-        <script type="module" src="compiled/script.js"></script>
-        <link href="compiled/style.css" type="text/css" rel="stylesheet">
-    </head>
+<head>
+    <script> var exports = {}; </script>
+    <script type="module" src="compiled/script.js"></script>
+    <link href="compiled/style.css" type="text/css" rel="stylesheet">
+</head>
 <body class="center-flex">
-    <div class="game-container">
-        <div class="speed-container center-flex">
-            <input type="range" list="tickmarks" class="slider" id="speedSlider">
-            <datalist id="tickmarks">
-                <option value="0" />
-                <option value="10"/>
-                <option value="20"/>
-                <option value="30"/>
-                <option value="40"/>
-                <option value="50"/>
-                <option value="60"/>
-                <option value="70"/>
-                <option value="80"/>
-                <option value="90"/>
-                <option value="100"/>
-            </datalist>
-            <div class="score-container">
-                Score: <span id="score-display">0</span>
-            </div>
-        </div>
-        <div class="game-window" id="game-window">
-            <canvas id="game-canvas" width="400px;" height="400px"></canvas>
+<div class="game-container">
+    <div class="speed-container center-flex">
+        <input type="range" list="tickmarks" class="slider" id="speedSlider">
+        <datalist id="tickmarks">
+            <option value="0"/>
+            <option value="10"/>
+            <option value="20"/>
+            <option value="30"/>
+            <option value="40"/>
+            <option value="50"/>
+            <option value="60"/>
+            <option value="70"/>
+            <option value="80"/>
+            <option value="90"/>
+            <option value="100"/>
+        </datalist>
+        <div class="score-container">
+            Score: <span id="score-display">0</span>
         </div>
     </div>
+    <div class="game-window" id="game-window">
+        <canvas id="game-canvas" width="400px;" height="400px"></canvas>
+    </div>
+</div>
 </body>
 </html>

@@ -1,5 +1,6 @@
-import { Game } from "./game"
-var game = new Game();
+import {Game} from "./game"
+
+let game = new Game();
 game.initialize();
 game.start();
 
