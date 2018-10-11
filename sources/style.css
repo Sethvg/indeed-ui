@@ -63,10 +63,16 @@
 }
 
 .speed-container {
-  flex: 0 0 0;
-  width: 100%;
+  flex: 1 0 0;
   border-bottom: 1px solid black;
   min-height: 50px;
+}
+
+.score-container {
+  flex: 0 0 200px;
+  text-align: right;
+  margin-top: auto;
+  padding: 7px;
 }
 
 .game-window {
