@@ -125,7 +125,6 @@ var Game = (function () {
             dot.fall(_this.fallSpeed);
             dot.draw(context);
         });
-        Game.Ctx = context;
         this.handleClicks();
         this.pruneSorted();
     };
@@ -295,7 +294,6 @@ var Game = (function () {
         Game.Scoreboard.innerText = this.score.toFixed(2);
     };
     Game.Canvas = document.getElementById("game-canvas");
-    Game.Ctx = Game.Canvas.getContext("2d");
     Game.Scoreboard = document.getElementById("score-display");
     return Game;
 }());

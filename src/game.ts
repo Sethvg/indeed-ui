@@ -2,8 +2,7 @@ import {Dot} from "./dot";
 import {MathUtil} from "./MathUtil";
 
 export class Game {
-    public static Canvas: HTMLCanvasElement = <HTMLCanvasElement>document.getElementById("game-canvas");
-    public static Ctx: CanvasRenderingContext2D = Game.Canvas.getContext("2d")
+    private static Canvas: HTMLCanvasElement = <HTMLCanvasElement>document.getElementById("game-canvas");
     private static Scoreboard: HTMLSpanElement = <HTMLSpanElement>document.getElementById("score-display");
 
     private state: Dot[] = [];
@@ -51,7 +50,6 @@ export class Game {
             dot.fall(this.fallSpeed);
             dot.draw(context);
         });
-        Game.Ctx = context;
         this.handleClicks();
         this.pruneSorted();
     }
