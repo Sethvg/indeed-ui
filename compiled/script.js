@@ -5,7 +5,7 @@ var MathUtil = (function () {
     function MathUtil() {
     }
     MathUtil.GetRandomInRange = function (lower, higher) {
-        return Math.floor(Math.random() * higher) + lower;
+        return Math.floor(Math.random() * (higher - lower)) + lower;
     };
     return MathUtil;
 }());
