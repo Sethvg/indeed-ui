@@ -24,7 +24,6 @@ export class Game {
     private minRadius = 10;
     private score: number = 0;
 
-
     public start() {
         console.log("Starting Game");
         this.spawnPID = setInterval(() => {
