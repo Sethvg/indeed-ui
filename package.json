@@ -5,7 +5,7 @@
   "main": "src/script.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc && sass \"src/style.scss\" \"sources/style.css\" && browserify build/script.js -o sources/script.js "
+    "build": "tsc && sass \"src/style.scss\" \"compiled/style.css\" && browserify build/script.js -o compiled/script.js "
   },
   "repository": {
     "type": "git",
