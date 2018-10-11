@@ -61,7 +61,7 @@ export class Game {
         console.log("Spawning: " + count);
         for (let a = 0; a < count; a++) {
             let radius = MathUtil.GetRandomInRange(this.minRadius, this.maxRadius);
-            let xPos = MathUtil.GetRandomInRange(0, (this.width - radius));
+            let xPos = MathUtil.GetRandomInRange(radius, (this.width - radius));
             let dot = new Dot(radius, xPos);
             this.state.push(dot);
         }

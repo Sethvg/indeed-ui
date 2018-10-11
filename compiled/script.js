@@ -104,7 +104,9 @@ var Game = (function () {
     Game.prototype.start = function () {
         var _this = this;
         console.log("Starting Game");
-        this.spawnPID = setInterval(function () { _this.spawn(1); }, this.spawnRate);
+        this.spawnPID = setInterval(function () {
+            _this.spawn(1);
+        }, this.spawnRate);
         this.tickPID = setInterval(this.tick.bind(this), this.tickRate);
         this.spawn(1);
     };
@@ -131,7 +133,7 @@ var Game = (function () {
         console.log("Spawning: " + count);
         for (var a = 0; a < count; a++) {
             var radius = MathUtil_1.MathUtil.GetRandomInRange(this.minRadius, this.maxRadius);
-            var xPos = MathUtil_1.MathUtil.GetRandomInRange(0, (this.width - radius));
+            var xPos = MathUtil_1.MathUtil.GetRandomInRange(radius, (this.width - radius));
             var dot = new dot_1.Dot(radius, xPos);
             this.state.push(dot);
         }
